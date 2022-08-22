@@ -31,7 +31,9 @@ const HooksRevision = () => {
         let timer = setTimeout(()=>{
             setCount((myCount)=>myCount+1)
         },1000)
-        return () => clearTimeout(timer)
+        return () => clearTimeout(timer) //cleanup
+
+        
     },[]);
 
     
