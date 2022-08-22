@@ -18,3 +18,8 @@ Output - A variable & a func which can change the variable
 1. No dependency passed - Infinite rendering(Reruns on every render)
 2. An empty array is passed as the dependency array - Only on initial render
 3. props or state values are passed
+
+## useRef
+- The useRef hook allows us to persist values between renders
+- It does not cause re-renders
+- Can be used a DOM element directly (e.g. inputElementRef.focus)
