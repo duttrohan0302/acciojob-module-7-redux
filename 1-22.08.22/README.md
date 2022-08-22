@@ -23,3 +23,11 @@ Output - A variable & a func which can change the variable
 - The useRef hook allows us to persist values between renders
 - It does not cause re-renders
 - Can be used a DOM element directly (e.g. inputElementRef.focus)
+
+## useMemo
+- Used to memoize expensive functions
+
+## useCallback
+- Even if we use memo(ChildComponent) which has a function being sent down as props from the parent
+- Whenever parent re-renders, functions are recreated which re-renders the child component as well
+- Even if directly no change is happening there
