@@ -49,6 +49,16 @@ const { Provider : NumProvider, Consumer: NumConsumer } = NumberContext;
 // const Provider = NumberContext.Provider;
 // const numProvider = Provider
 
+// const obj = {
+//   name: "Rohan",
+//   num: 5
+// }
+// const name = obj.name
+// const {name} = obj //destructuring
+
+// const myName = obj.name
+// const {name: myName} = obj 
+
 const App = () => {
   const user = {
     name: "Rohan"
