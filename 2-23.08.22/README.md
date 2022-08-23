@@ -36,3 +36,18 @@
 - store:
   - It brings actions and reducers together, holding and changing the state for the whole app
   - There is only one store
+  - We used createStore function from redux to create a store
+  - For that we created and exported configureStore which takes a default state and we create the store using the created reducer and the default state
+- connect
+  - This connects our component to our redux store
+  - Synatx export default connect(mapStateToProps, mapDispatchToProps)(App)
+- mapStateToProps 
+  - This is used to retrieve the store state
+- mapDispatchToProps
+  - This is used to retrieve the actions and dispatch them to the store
+- Provider - imported from react-redux in index.js
+    - We need to tell our react app that we have a global state
+- CombineReducers 
+  - Combines multiple reducers and gives the same property names inside which you have your state
+  - state becomes {operate : {num: 5}, rotate: {rotating : true}}
+  - Must provide initital state to reducers in this case
