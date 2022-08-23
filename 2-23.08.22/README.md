@@ -15,3 +15,24 @@
   - type => What type of action do you want to perform
   - payload => Any data you want to send, you send here
 - Then after performing the action you return the new state
+
+## Redux
+### Packages
+- Redux
+  - It creates a global state for the whole application which can be used by any component
+  - It's a state management library
+  - You have only state for your whole app and not states for each of your components
+- React-Redux
+  - This is used so we can access Redux's data and modify it by sending actions to Redux (not exactly to Redux (dispatch))
+
+### Concepts
+- actions:
+  - These are objects that should have 2 properties
+  - One describing the type of action
+  - Other one describing what should be changed in the app state
+- reducers:
+  - These are the functions that implement the behavior of the actions.
+  - They change the state of the app based on the action description & state change description
+- store:
+  - It brings actions and reducers together, holding and changing the state for the whole app
+  - There is only one store
