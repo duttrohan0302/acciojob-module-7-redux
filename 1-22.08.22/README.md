@@ -38,3 +38,4 @@ Output - A variable & a func which can change the variable
 - Rendering the NumberContext.Provider with some contents, & passing value prop to it. 
 - This will make sure that this "value" is available to all of its descendants(and so on)
 - You can use this with the consumer inside the Display
+- useContext simplifies the approach by not needing to use Consumer which is a lifesaver when it comes to Nested Consumers
